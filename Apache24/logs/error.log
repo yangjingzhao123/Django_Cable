@@ -1,0 +1,369 @@
+[Mon Aug 27 15:16:54.901028 2018] [ssl:warn] [pid 10516:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:16:55.021020 2018] [ssl:warn] [pid 10516:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:16:55.021020 2018] [mpm_winnt:notice] [pid 10516:tid 612] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o configured -- resuming normal operations
+[Mon Aug 27 15:16:55.021020 2018] [mpm_winnt:notice] [pid 10516:tid 612] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 15:16:55.021020 2018] [core:notice] [pid 10516:tid 612] AH00094: Command line: 'httpd.exe -d D:/Apache24'
+[Mon Aug 27 15:16:55.121014 2018] [mpm_winnt:notice] [pid 10516:tid 612] AH00418: Parent: Created child process 7748
+Apache server shutdown initiated...
+sl:warn] [pid 7748:tid 576] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:16:59.330757 2018] [ssl:warn] [pid 7748:tid 576] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:16:59.340756 2018] [mpm_winnt:notice] [pid 7748:tid 576] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 15:22:52.154453 2018] [mpm_winnt:notice] [pid 10516:tid 612] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 15:22:54.174328 2018] [mpm_winnt:notice] [pid 7748:tid 576] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 15:22:54.214297 2018] [mpm_winnt:notice] [pid 10516:tid 612] AH00430: Parent: Child process 7748 exited successfully.
+[Mon Aug 27 15:27:35.303505 2018] [ssl:warn] [pid 8012:tid 496] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:27:35.413498 2018] [ssl:warn] [pid 8012:tid 496] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:27:35.413498 2018] [mpm_winnt:notice] [pid 8012:tid 496] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o configured -- resuming normal operations
+[Mon Aug 27 15:27:35.413498 2018] [mpm_winnt:notice] [pid 8012:tid 496] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 15:27:35.413498 2018] [core:notice] [pid 8012:tid 496] AH00094: Command line: 'httpd.exe -d D:/Apache24'
+[Mon Aug 27 15:27:35.513523 2018] [mpm_winnt:notice] [pid 8012:tid 496] AH00418: Parent: Created child process 6652
+Apache server interrupted...
+018] [ssl:warn] [pid 6652:tid 580] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:27:39.043271 2018] [ssl:warn] [pid 6652:tid 580] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:27:39.053270 2018] [mpm_winnt:notice] [pid 6652:tid 580] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 15:30:12.331947 2018] [mpm_winnt:notice] [pid 8012:tid 496] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 15:30:14.351820 2018] [mpm_winnt:notice] [pid 6652:tid 580] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 15:30:14.381789 2018] [mpm_winnt:notice] [pid 8012:tid 496] AH00430: Parent: Child process 6652 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 9660:tid 600] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:31:31.466935 2018] [ssl:warn] [pid 9660:tid 600] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:31:31.466935 2018] [mpm_winnt:notice] [pid 9660:tid 600] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o configured -- resuming normal operations
+[Mon Aug 27 15:31:31.466935 2018] [mpm_winnt:notice] [pid 9660:tid 600] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 15:31:31.466935 2018] [core:notice] [pid 9660:tid 600] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 15:31:31.486933 2018] [mpm_winnt:notice] [pid 9660:tid 600] AH00418: Parent: Created child process 12080
+[Mon Aug 27 15:31:35.206699 2018] [ssl:warn] [pid 12080:tid 556] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:31:35.316692 2018] [ssl:warn] [pid 12080:tid 556] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:31:35.326692 2018] [mpm_winnt:notice] [pid 12080:tid 556] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 15:32:01.815023 2018] [mpm_winnt:notice] [pid 9660:tid 600] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 15:32:03.834928 2018] [mpm_winnt:notice] [pid 12080:tid 556] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 15:32:03.864898 2018] [mpm_winnt:notice] [pid 9660:tid 600] AH00430: Parent: Child process 12080 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 8172:tid 628] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:32:21.573781 2018] [ssl:warn] [pid 8172:tid 628] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:32:21.573781 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o configured -- resuming normal operations
+[Mon Aug 27 15:32:21.573781 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 15:32:21.573781 2018] [core:notice] [pid 8172:tid 628] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 15:32:21.593779 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00418: Parent: Created child process 9316
+[Mon Aug 27 15:32:25.533531 2018] [ssl:warn] [pid 9316:tid 728] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:32:25.643523 2018] [ssl:warn] [pid 9316:tid 728] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:32:25.653524 2018] [mpm_winnt:notice] [pid 9316:tid 728] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 8172:tid 628] AH00424: Parent: Received restart signal -- Restarting the server.
+[Mon Aug 27 15:55:03.572406 2018] [ssl:warn] [pid 8172:tid 628] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:55:03.572406 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o configured -- resuming normal operations
+[Mon Aug 27 15:55:03.572406 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 15:55:03.572406 2018] [core:notice] [pid 8172:tid 628] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 15:55:03.572406 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00418: Parent: Created child process 11172
+[Mon Aug 27 15:55:05.472271 2018] [mpm_winnt:notice] [pid 9316:tid 728] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 15:55:06.932180 2018] [ssl:warn] [pid 11172:tid 644] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:55:07.042173 2018] [ssl:warn] [pid 11172:tid 644] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:55:07.042173 2018] [mpm_winnt:notice] [pid 11172:tid 644] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 8172:tid 628] AH00424: Parent: Received restart signal -- Restarting the server.
+[Mon Aug 27 15:55:38.730179 2018] [ssl:warn] [pid 8172:tid 628] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:55:38.730179 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Mon Aug 27 15:55:38.730179 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 15:55:38.730179 2018] [core:notice] [pid 8172:tid 628] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 15:55:38.740178 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00418: Parent: Created child process 12188
+[Mon Aug 27 15:55:40.610060 2018] [mpm_winnt:notice] [pid 11172:tid 644] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 15:55:42.309952 2018] [ssl:warn] [pid 12188:tid 656] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:55:42.449944 2018] [ssl:warn] [pid 12188:tid 656] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 15:55:42.519940 2018] [mpm_winnt:notice] [pid 12188:tid 656] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 15:56:23.101669 2018] [wsgi:error] [pid 12188:tid 1280] [client 127.0.0.1:50681] mod_wsgi (pid=12188): Failed to exec Python script file 'D:/Django_Cable/CIS/CIS/wsgi.py'.
+[Mon Aug 27 15:56:23.101669 2018] [wsgi:error] [pid 12188:tid 1280] [client 127.0.0.1:50681] mod_wsgi (pid=12188): Exception occurred processing WSGI script 'D:/Django_Cable/CIS/CIS/wsgi.py'.
+[Mon Aug 27 15:56:23.101669 2018] [wsgi:error] [pid 12188:tid 1280] [client 127.0.0.1:50681] Traceback (most recent call last):\r
+[Mon Aug 27 15:56:23.101669 2018] [wsgi:error] [pid 12188:tid 1280] [client 127.0.0.1:50681]   File "D:/Django_Cable/CIS/CIS/wsgi.py", line 12, in <module>\r
+[Mon Aug 27 15:56:23.101669 2018] [wsgi:error] [pid 12188:tid 1280] [client 127.0.0.1:50681]     from django.core.wsgi import get_wsgi_application\r
+[Mon Aug 27 15:56:23.101669 2018] [wsgi:error] [pid 12188:tid 1280] [client 127.0.0.1:50681] ModuleNotFoundError: No module named 'django'\r
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 8172:tid 628] AH00424: Parent: Received restart signal -- Restarting the server.
+[Mon Aug 27 16:03:36.687936 2018] [ssl:warn] [pid 8172:tid 628] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 16:03:36.687936 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Mon Aug 27 16:03:36.687936 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 16:03:36.687936 2018] [core:notice] [pid 8172:tid 628] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 16:03:36.707936 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00418: Parent: Created child process 3848
+[Mon Aug 27 16:03:38.607816 2018] [mpm_winnt:notice] [pid 12188:tid 656] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 16:03:40.217715 2018] [ssl:warn] [pid 3848:tid 124] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 16:03:40.347707 2018] [ssl:warn] [pid 3848:tid 124] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 16:03:40.417703 2018] [mpm_winnt:notice] [pid 3848:tid 124] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 16:04:50.295742 2018] [wsgi:error] [pid 3848:tid 1280] [client 127.0.0.1:50956] mod_wsgi (pid=3848): Failed to exec Python script file 'D:/Django_Cable/CIS/CIS/wsgi.py'.
+[Mon Aug 27 16:04:50.295742 2018] [wsgi:error] [pid 3848:tid 1280] [client 127.0.0.1:50956] mod_wsgi (pid=3848): Exception occurred processing WSGI script 'D:/Django_Cable/CIS/CIS/wsgi.py'.
+[Mon Aug 27 16:04:50.305741 2018] [wsgi:error] [pid 3848:tid 1280] [client 127.0.0.1:50956] Traceback (most recent call last):\r
+[Mon Aug 27 16:04:50.305741 2018] [wsgi:error] [pid 3848:tid 1280] [client 127.0.0.1:50956]   File "D:/Django_Cable/CIS/CIS/wsgi.py", line 12, in <module>\r
+[Mon Aug 27 16:04:50.305741 2018] [wsgi:error] [pid 3848:tid 1280] [client 127.0.0.1:50956]     from django.core.wsgi import get_wsgi_application\r
+[Mon Aug 27 16:04:50.305741 2018] [wsgi:error] [pid 3848:tid 1280] [client 127.0.0.1:50956] ModuleNotFoundError: No module named 'django'\r
+[Mon Aug 27 16:54:02.635692 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 16:54:04.653286 2018] [mpm_winnt:notice] [pid 3848:tid 124] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 16:54:04.700158 2018] [mpm_winnt:notice] [pid 8172:tid 628] AH00430: Parent: Child process 3848 exited successfully.
+Starting the 'Apache2.4' service
+(OS 5)¾Ü¾ø·ÃÎÊ¡£  : AH10012: Failed to open the 'Apache2.4' service
+[Mon Aug 27 17:17:20.807621 2018] [ssl:warn] [pid 7460:tid 456] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:17:20.927614 2018] [ssl:warn] [pid 7460:tid 456] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:17:20.927614 2018] [mpm_winnt:notice] [pid 7460:tid 456] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Mon Aug 27 17:17:20.927614 2018] [mpm_winnt:notice] [pid 7460:tid 456] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 17:17:20.927614 2018] [core:notice] [pid 7460:tid 456] AH00094: Command line: 'httpd.exe -d D:/Apache24'
+[Mon Aug 27 17:17:21.037609 2018] [mpm_winnt:notice] [pid 7460:tid 456] AH00418: Parent: Created child process 11044
+Apache server interrupted...
+018] [ssl:warn] [pid 11044:tid 568] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:17:24.557392 2018] [ssl:warn] [pid 11044:tid 568] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:17:24.647387 2018] [mpm_winnt:notice] [pid 11044:tid 568] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 17:17:51.649328 2018] [mpm_winnt:notice] [pid 7460:tid 456] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 17:17:53.669221 2018] [mpm_winnt:notice] [pid 11044:tid 568] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 17:17:53.729187 2018] [mpm_winnt:notice] [pid 7460:tid 456] AH00430: Parent: Child process 11044 exited successfully.
+(OS 5)¾Ü¾ø·ÃÎÊ¡£  : AH10014: Failed to open the 'Apache2.4' service
+[Mon Aug 27 17:19:25.669671 2018] [ssl:warn] [pid 10308:tid 604] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:19:25.789664 2018] [ssl:warn] [pid 10308:tid 604] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:19:25.789664 2018] [mpm_winnt:notice] [pid 10308:tid 604] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Mon Aug 27 17:19:25.789664 2018] [mpm_winnt:notice] [pid 10308:tid 604] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 17:19:25.789664 2018] [core:notice] [pid 10308:tid 604] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 17:19:25.809663 2018] [mpm_winnt:notice] [pid 10308:tid 604] AH00418: Parent: Created child process 7676
+[Mon Aug 27 17:19:29.249467 2018] [ssl:warn] [pid 7676:tid 588] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:19:29.369445 2018] [ssl:warn] [pid 7676:tid 588] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:19:29.439441 2018] [mpm_winnt:notice] [pid 7676:tid 588] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 17:20:35.030124 2018] [wsgi:error] [pid 7676:tid 1280] [client 127.0.0.1:50419] Not Found: /amin\r
+[Mon Aug 27 17:27:24.462231 2018] [mpm_winnt:notice] [pid 10308:tid 604] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 17:27:26.482108 2018] [mpm_winnt:notice] [pid 7676:tid 588] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 17:27:26.582102 2018] [mpm_winnt:notice] [pid 10308:tid 604] AH00430: Parent: Child process 7676 exited successfully.
+[Mon Aug 27 17:29:09.484964 2018] [ssl:warn] [pid 2436:tid 548] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:29:09.614955 2018] [ssl:warn] [pid 2436:tid 548] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:29:09.614955 2018] [mpm_winnt:notice] [pid 2436:tid 548] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Mon Aug 27 17:29:09.614955 2018] [mpm_winnt:notice] [pid 2436:tid 548] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 17:29:09.614955 2018] [core:notice] [pid 2436:tid 548] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 17:29:09.624955 2018] [mpm_winnt:notice] [pid 2436:tid 548] AH00418: Parent: Created child process 11572
+Apache server shutdown initiated...
+sl:warn] [pid 11572:tid 656] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:29:13.354726 2018] [ssl:warn] [pid 11572:tid 656] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:29:13.424722 2018] [mpm_winnt:notice] [pid 11572:tid 656] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 17:30:00.861848 2018] [mpm_winnt:notice] [pid 2436:tid 548] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 17:30:02.881693 2018] [mpm_winnt:notice] [pid 11572:tid 656] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 17:30:02.921691 2018] [mpm_winnt:notice] [pid 2436:tid 548] AH00430: Parent: Child process 11572 exited successfully.
+[Mon Aug 27 17:31:14.346411 2018] [ssl:warn] [pid 6588:tid 524] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:31:14.486402 2018] [ssl:warn] [pid 6588:tid 524] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:31:14.486402 2018] [mpm_winnt:notice] [pid 6588:tid 524] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Mon Aug 27 17:31:14.486402 2018] [mpm_winnt:notice] [pid 6588:tid 524] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 17:31:14.486402 2018] [core:notice] [pid 6588:tid 524] AH00094: Command line: 'httpd.exe -d D:/Apache24'
+[Mon Aug 27 17:31:14.506401 2018] [mpm_winnt:notice] [pid 6588:tid 524] AH00418: Parent: Created child process 10372
+Apache server interrupted...
+018] [ssl:warn] [pid 10372:tid 500] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:31:18.276170 2018] [ssl:warn] [pid 10372:tid 500] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:31:18.346180 2018] [mpm_winnt:notice] [pid 10372:tid 500] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 17:32:54.605766 2018] [mpm_winnt:notice] [pid 6588:tid 524] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 17:32:56.625638 2018] [mpm_winnt:notice] [pid 10372:tid 500] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 17:32:56.695604 2018] [mpm_winnt:notice] [pid 6588:tid 524] AH00430: Parent: Child process 10372 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 1384:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:49:55.628078 2018] [ssl:warn] [pid 1384:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:49:55.628078 2018] [mpm_winnt:notice] [pid 1384:tid 612] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Mon Aug 27 17:49:55.628078 2018] [mpm_winnt:notice] [pid 1384:tid 612] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 17:49:55.628078 2018] [core:notice] [pid 1384:tid 612] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 17:49:55.648077 2018] [mpm_winnt:notice] [pid 1384:tid 612] AH00418: Parent: Created child process 3292
+[Mon Aug 27 17:49:59.427857 2018] [ssl:warn] [pid 3292:tid 532] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:49:59.537838 2018] [ssl:warn] [pid 3292:tid 532] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 17:49:59.607834 2018] [mpm_winnt:notice] [pid 3292:tid 532] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 27 19:04:44.012071 2018] [mpm_winnt:notice] [pid 1384:tid 612] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 27 19:04:46.030894 2018] [mpm_winnt:notice] [pid 3292:tid 532] AH00364: Child: All worker threads have exited.
+[Mon Aug 27 19:04:46.109009 2018] [mpm_winnt:notice] [pid 1384:tid 612] AH00430: Parent: Child process 3292 exited successfully.
+[Mon Aug 27 21:05:10.326299 2018] [ssl:warn] [pid 3840:tid 652] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 21:05:12.424405 2018] [ssl:warn] [pid 3840:tid 652] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 21:05:12.424405 2018] [mpm_winnt:notice] [pid 3840:tid 652] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Mon Aug 27 21:05:12.424405 2018] [mpm_winnt:notice] [pid 3840:tid 652] AH00456: Server built: Jul 10 2018 09:37:36
+[Mon Aug 27 21:05:12.424405 2018] [core:notice] [pid 3840:tid 652] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Mon Aug 27 21:05:12.549396 2018] [mpm_winnt:notice] [pid 3840:tid 652] AH00418: Parent: Created child process 7052
+[Mon Aug 27 21:05:18.737826 2018] [ssl:warn] [pid 7052:tid 552] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 21:05:25.098615 2018] [ssl:warn] [pid 7052:tid 552] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 27 21:05:25.268605 2018] [mpm_winnt:notice] [pid 7052:tid 552] AH00354: Child: Starting 64 worker threads.
+[Tue Aug 28 00:28:09.713712 2018] [mpm_winnt:notice] [pid 3840:tid 652] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Aug 28 00:28:11.821723 2018] [mpm_winnt:notice] [pid 7052:tid 552] AH00364: Child: All worker threads have exited.
+[Tue Aug 28 00:28:11.934274 2018] [mpm_winnt:notice] [pid 3840:tid 652] AH00430: Parent: Child process 7052 exited successfully.
+[Tue Aug 28 09:19:57.055038 2018] [ssl:warn] [pid 3640:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 09:19:58.383066 2018] [ssl:warn] [pid 3640:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 09:19:58.383066 2018] [mpm_winnt:notice] [pid 3640:tid 612] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Tue Aug 28 09:19:58.383066 2018] [mpm_winnt:notice] [pid 3640:tid 612] AH00456: Server built: Jul 10 2018 09:37:36
+[Tue Aug 28 09:19:58.383066 2018] [core:notice] [pid 3640:tid 612] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Tue Aug 28 09:19:58.524687 2018] [mpm_winnt:notice] [pid 3640:tid 612] AH00418: Parent: Created child process 6600
+[Tue Aug 28 09:20:01.415102 2018] [ssl:warn] [pid 6600:tid 548] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 09:20:01.805698 2018] [ssl:warn] [pid 6600:tid 548] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 09:20:01.915065 2018] [mpm_winnt:notice] [pid 6600:tid 548] AH00354: Child: Starting 64 worker threads.
+[Tue Aug 28 12:52:41.195724 2018] [mpm_winnt:notice] [pid 3640:tid 612] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Aug 28 12:52:43.258091 2018] [mpm_winnt:notice] [pid 6600:tid 548] AH00364: Child: All worker threads have exited.
+[Tue Aug 28 12:52:43.745475 2018] [mpm_winnt:notice] [pid 3640:tid 612] AH00430: Parent: Child process 6600 exited successfully.
+[Tue Aug 28 12:53:10.229555 2018] [ssl:warn] [pid 3796:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 12:53:11.354473 2018] [ssl:warn] [pid 3796:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 12:53:11.354473 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Tue Aug 28 12:53:11.354473 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00456: Server built: Jul 10 2018 09:37:36
+[Tue Aug 28 12:53:11.354473 2018] [core:notice] [pid 3796:tid 612] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Tue Aug 28 12:53:11.588831 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00418: Parent: Created child process 6896
+[Tue Aug 28 12:53:13.963657 2018] [ssl:warn] [pid 6896:tid 536] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 12:53:14.510492 2018] [ssl:warn] [pid 6896:tid 536] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 12:53:14.604235 2018] [mpm_winnt:notice] [pid 6896:tid 536] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 3796:tid 612] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Aug 28 15:41:15.217949 2018] [ssl:warn] [pid 3796:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 15:41:15.217949 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Tue Aug 28 15:41:15.217949 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00456: Server built: Jul 10 2018 09:37:36
+[Tue Aug 28 15:41:15.217949 2018] [core:notice] [pid 3796:tid 612] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Tue Aug 28 15:41:15.317945 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00418: Parent: Created child process 8000
+[Tue Aug 28 15:41:18.643128 2018] [ssl:warn] [pid 8000:tid 572] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 15:41:18.743121 2018] [ssl:warn] [pid 8000:tid 572] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 15:41:18.903126 2018] [mpm_winnt:notice] [pid 8000:tid 572] AH00354: Child: Starting 64 worker threads.
+[Tue Aug 28 15:41:21.655512 2018] [mpm_winnt:notice] [pid 6896:tid 536] AH00364: Child: All worker threads have exited.
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] Internal Server Error: /admin/login/\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] Traceback (most recent call last):\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\utils.py", line 66, in __getitem__\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     return self._engines[alias]\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] KeyError: 'django'\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] \r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] During handling of the above exception, another exception occurred:\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] \r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] Traceback (most recent call last):\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 121, in get_package_libraries\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     module = import_module(entry[1])\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\importlib\\__init__.py", line 127, in import_module\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     return _bootstrap._gcd_import(name[level:], package, level)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "<frozen importlib._bootstrap>", line 1006, in _gcd_import\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "<frozen importlib._bootstrap>", line 983, in _find_and_load\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "<frozen importlib._bootstrap>", line 677, in _load_unlocked\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "<frozen importlib._bootstrap_external>", line 728, in exec_module\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\suit\\templatetags\\suit_menu.py", line 5, in <module>\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     from django.core.urlresolvers import reverse, resolve\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] ModuleNotFoundError: No module named 'django.core.urlresolvers'\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] \r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] During handling of the above exception, another exception occurred:\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] \r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] Traceback (most recent call last):\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\core\\handlers\\exception.py", line 34, in inner\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     response = get_response(request)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\core\\handlers\\base.py", line 156, in _get_response\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     response = self.process_exception_by_middleware(e, request)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\core\\handlers\\base.py", line 154, in _get_response\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     response = response.render()\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\response.py", line 106, in render\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     self.content = self.rendered_content\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\response.py", line 81, in rendered_content\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     template = self.resolve_template(self.template_name)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\response.py", line 63, in resolve_template\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     return select_template(template, using=self.using)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\loader.py", line 38, in select_template\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     engines = _engine_list(using)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\loader.py", line 66, in _engine_list\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     return engines.all() if using is None else [engines[using]]\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\utils.py", line 90, in all\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     return [self[alias] for alias in self]\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\utils.py", line 90, in <listcomp>\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     return [self[alias] for alias in self]\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\utils.py", line 81, in __getitem__\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     engine = engine_cls(params)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 25, in __init__\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     options['libraries'] = self.get_templatetag_libraries(libraries)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 43, in get_templatetag_libraries\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     libraries = get_installed_libraries()\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 108, in get_installed_libraries\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     for name in get_package_libraries(pkg):\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 125, in get_package_libraries\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160]     "trying to load '%s': %s" % (entry[1], e)\r
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] django.template.library.InvalidTemplateLibrary: Invalid template library specified. ImportError raised when trying to load 'suit.templatetags.suit_menu': No module named 'django.core.urlresolvers'
+[Tue Aug 28 15:41:22.582511 2018] [wsgi:error] [pid 8000:tid 1260] [client 127.0.0.1:52160] \r
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 3796:tid 612] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Aug 28 15:42:56.213293 2018] [ssl:warn] [pid 3796:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 15:42:56.213293 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Tue Aug 28 15:42:56.213293 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00456: Server built: Jul 10 2018 09:37:36
+[Tue Aug 28 15:42:56.213293 2018] [core:notice] [pid 3796:tid 612] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Tue Aug 28 15:42:56.223293 2018] [mpm_winnt:notice] [pid 3796:tid 612] AH00418: Parent: Created child process 7456
+[Tue Aug 28 15:42:58.080029 2018] [mpm_winnt:notice] [pid 8000:tid 572] AH00364: Child: All worker threads have exited.
+[Tue Aug 28 15:42:59.629932 2018] [ssl:warn] [pid 7456:tid 712] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 15:42:59.749924 2018] [ssl:warn] [pid 7456:tid 712] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 15:42:59.809920 2018] [mpm_winnt:notice] [pid 7456:tid 712] AH00354: Child: Starting 64 worker threads.
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] Internal Server Error: /admin/login/\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] Traceback (most recent call last):\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\utils.py", line 66, in __getitem__\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     return self._engines[alias]\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] KeyError: 'django'\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] \r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] During handling of the above exception, another exception occurred:\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] \r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] Traceback (most recent call last):\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 121, in get_package_libraries\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     module = import_module(entry[1])\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\importlib\\__init__.py", line 127, in import_module\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     return _bootstrap._gcd_import(name[level:], package, level)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "<frozen importlib._bootstrap>", line 1006, in _gcd_import\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "<frozen importlib._bootstrap>", line 983, in _find_and_load\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "<frozen importlib._bootstrap>", line 677, in _load_unlocked\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "<frozen importlib._bootstrap_external>", line 728, in exec_module\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\suit\\templatetags\\suit_menu.py", line 5, in <module>\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     from django.core.urlresolvers import reverse, resolve\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] ModuleNotFoundError: No module named 'django.core.urlresolvers'\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] \r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] During handling of the above exception, another exception occurred:\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] \r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] Traceback (most recent call last):\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\core\\handlers\\exception.py", line 34, in inner\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     response = get_response(request)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\core\\handlers\\base.py", line 156, in _get_response\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     response = self.process_exception_by_middleware(e, request)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\core\\handlers\\base.py", line 154, in _get_response\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     response = response.render()\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\response.py", line 106, in render\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     self.content = self.rendered_content\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\response.py", line 81, in rendered_content\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     template = self.resolve_template(self.template_name)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\response.py", line 63, in resolve_template\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     return select_template(template, using=self.using)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\loader.py", line 38, in select_template\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     engines = _engine_list(using)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\loader.py", line 66, in _engine_list\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     return engines.all() if using is None else [engines[using]]\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\utils.py", line 90, in all\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     return [self[alias] for alias in self]\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\utils.py", line 90, in <listcomp>\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     return [self[alias] for alias in self]\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\utils.py", line 81, in __getitem__\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     engine = engine_cls(params)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 25, in __init__\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     options['libraries'] = self.get_templatetag_libraries(libraries)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 43, in get_templatetag_libraries\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     libraries = get_installed_libraries()\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 108, in get_installed_libraries\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     for name in get_package_libraries(pkg):\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]   File "d:\\pythonvirtualenv\\django_cable-izcwrmgq\\lib\\site-packages\\django\\template\\backends\\django.py", line 125, in get_package_libraries\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193]     "trying to load '%s': %s" % (entry[1], e)\r
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] django.template.library.InvalidTemplateLibrary: Invalid template library specified. ImportError raised when trying to load 'suit.templatetags.suit_menu': No module named 'django.core.urlresolvers'
+[Tue Aug 28 15:43:16.471323 2018] [wsgi:error] [pid 7456:tid 1308] [client 127.0.0.1:52193] \r
+[Tue Aug 28 21:40:38.813983 2018] [ssl:warn] [pid 8272:tid 580] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 21:40:38.853981 2018] [core:warn] [pid 8272:tid 580] AH00098: pid file D:/ProjectCode/Django_Cable/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Aug 28 21:40:38.943976 2018] [ssl:warn] [pid 8272:tid 580] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 21:40:38.943976 2018] [mpm_winnt:notice] [pid 8272:tid 580] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Tue Aug 28 21:40:38.943976 2018] [mpm_winnt:notice] [pid 8272:tid 580] AH00456: Server built: Jul 10 2018 09:37:36
+[Tue Aug 28 21:40:38.943976 2018] [core:notice] [pid 8272:tid 580] AH00094: Command line: 'httpd.exe -d D:/ProjectCode/Django_Cable/Apache24'
+[Tue Aug 28 21:40:39.013971 2018] [mpm_winnt:notice] [pid 8272:tid 580] AH00418: Parent: Created child process 13056
+Apache server interrupted...
+018] [ssl:warn] [pid 13056:tid 540] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 21:40:42.893727 2018] [ssl:warn] [pid 13056:tid 540] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 21:40:42.993721 2018] [mpm_winnt:notice] [pid 13056:tid 540] AH00354: Child: Starting 64 worker threads.
+[Tue Aug 28 21:41:57.055979 2018] [mpm_winnt:notice] [pid 8272:tid 580] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Aug 28 21:41:59.075853 2018] [mpm_winnt:notice] [pid 13056:tid 540] AH00364: Child: All worker threads have exited.
+[Tue Aug 28 21:41:59.175816 2018] [mpm_winnt:notice] [pid 8272:tid 580] AH00430: Parent: Child process 13056 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 3048:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 21:42:37.283416 2018] [ssl:warn] [pid 3048:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 21:42:37.283416 2018] [mpm_winnt:notice] [pid 3048:tid 612] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Tue Aug 28 21:42:37.283416 2018] [mpm_winnt:notice] [pid 3048:tid 612] AH00456: Server built: Jul 10 2018 09:37:36
+[Tue Aug 28 21:42:37.283416 2018] [core:notice] [pid 3048:tid 612] AH00094: Command line: 'D:\\ProjectCode\\Django_Cable\\Apache24\\bin\\httpd.exe -d D:/ProjectCode/Django_Cable/Apache24'
+[Tue Aug 28 21:42:37.303416 2018] [mpm_winnt:notice] [pid 3048:tid 612] AH00418: Parent: Created child process 13140
+[Tue Aug 28 21:42:41.461137 2018] [ssl:warn] [pid 13140:tid 640] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 21:42:41.571130 2018] [ssl:warn] [pid 13140:tid 640] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Aug 28 21:42:41.641126 2018] [mpm_winnt:notice] [pid 13140:tid 640] AH00354: Child: Starting 64 worker threads.
