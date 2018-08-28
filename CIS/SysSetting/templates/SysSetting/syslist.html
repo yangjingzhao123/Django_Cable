@@ -1,0 +1,10 @@
+{% if latest_sysmodel_list %}
+    <ul>
+    {% for sysmodel in latest_sysmodel_list %}
+        <li><a href="/SysSetting/{{ sysmodel.id }}/">{{ sysmodel.model_name }}</a></li>
+        <li><a href="{% url 'SysSetting:sysdetail' sysmodel.id%}">{{ sysmodel.model_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No sysmodel are available.</p>
+{% endif %}

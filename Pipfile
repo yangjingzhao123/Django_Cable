@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+pymysql = "*"
+setuptools = "*"
+django-suit = "==0.2.25"
+mod-wsgi = {path = "./mod_wsgi-4.6.4+ap24vc15-cp37-cp37m-win_amd64.whl"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
