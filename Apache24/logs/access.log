@@ -113,3 +113,7 @@
 127.0.0.1 - - [28/Aug/2018:21:41:49 +0800] "GET /static/suit/img/glyphicons-halflings-white-shadow.png HTTP/1.1" 304 -
 127.0.0.1 - - [28/Aug/2018:21:41:49 +0800] "GET /static/suit/bootstrap/img/glyphicons-halflings.png HTTP/1.1" 304 -
 127.0.0.1 - - [28/Aug/2018:21:41:49 +0800] "GET /static/suit/img/cc_active_nav.png HTTP/1.1" 304 -
+127.0.0.1 - - [28/Aug/2018:21:42:44 +0800] "GET /admin/logout/ HTTP/1.1" 200 4832
+127.0.0.1 - - [28/Aug/2018:21:42:47 +0800] "GET /admin/ HTTP/1.1" 302 -
+127.0.0.1 - - [28/Aug/2018:21:42:47 +0800] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3543
+127.0.0.1 - - [28/Aug/2018:21:42:47 +0800] "GET /static/suit/bootstrap/img/glyphicons-halflings-white.png HTTP/1.1" 304 -
