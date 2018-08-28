@@ -22,11 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '$%n^81i+mqvb2$w%n2&ynv2x*4w%d!g@se3#7yy+!jlyn=9f$&'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-#ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -72,21 +68,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'CIS.wsgi.application'
 
-
+#发布时需要修改  DEBUG=Flase    ALLOWED_HOSTS=['IP']    数据库信息也要修改
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+ALLOWED_HOSTS = ['*']
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'CIS',
         'USER':'root',
         'PASSWORD':'456852',
         'HOST':'127.0.0.1',
         'PORT':'3306',
-
     }
 }
 
