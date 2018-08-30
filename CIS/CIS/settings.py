@@ -29,7 +29,10 @@ SECRET_KEY = '$%n^81i+mqvb2$w%n2&ynv2x*4w%d!g@se3#7yy+!jlyn=9f$&'
 
 INSTALLED_APPS = [
     'suit',  # 添加suit支持，必须在 'django.contrib.admin',之前
+    'mptt',
     'SysSetting.apps.SyssettingConfig', # 或者'SysSetting'
+    'BomMan.apps.BommanConfig' ,          #或者'BomMan'
+    'ConMan.apps.ConmanConfig' ,          #或者'ConMan'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'CIS',
         'USER':'root',
-        'PASSWORD':'456852',
+        'PASSWORD':'123456',
         'HOST':'127.0.0.1',
         'PORT':'3306',
     }

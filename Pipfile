@@ -9,6 +9,7 @@ pymysql = "*"
 setuptools = "*"
 django-suit = "==0.2.25"
 mod-wsgi = {path = "./mod_wsgi-4.6.4+ap24vc15-cp37-cp37m-win_amd64.whl"}
+django-mptt = "*"
 
 [dev-packages]
 

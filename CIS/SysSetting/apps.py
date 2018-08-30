@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class SyssettingConfig(AppConfig):
     name = 'SysSetting'
-    verbose_name = "系统设置"
+    verbose_name = "1.系统设置"
