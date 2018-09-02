@@ -381,3 +381,6 @@ sl:warn] [pid 3048:tid 612] AH01909: localhost:443:0 server certificate does NOT
 [Sun Sep 02 12:54:19.326856 2018] [mpm_winnt:notice] [pid 3624:tid 596] AH00354: Child: Starting 64 worker threads.
 (OS 5)¾Ü¾ø·ÃÎÊ¡£  : AH10014: Failed to open the 'Apache2.4' service
 [Sun Sep 02 12:58:40.493977 2018] [wsgi:error] [pid 3624:tid 1280] [client 127.0.0.1:55287] Not Found: /\r
+[Sun Sep 02 13:11:44.373576 2018] [mpm_winnt:notice] [pid 10764:tid 612] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 02 13:11:46.393480 2018] [mpm_winnt:notice] [pid 3624:tid 596] AH00364: Child: All worker threads have exited.
+[Sun Sep 02 13:11:46.513442 2018] [mpm_winnt:notice] [pid 10764:tid 612] AH00430: Parent: Child process 3624 exited successfully.
