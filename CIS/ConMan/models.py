@@ -3,13 +3,14 @@ import uuid
 import SysSetting
 import ConMan
 import BomMan
+
 class Order(models.Model):
     order_id = models.UUIDField(primary_key=True, default=uuid.uuid1, editable=False)
     order_name=models.CharField(verbose_name=u'订单编号',max_length=30,null=True,blank=True)
     order_value=models.CharField(max_length=30,null=True,blank=True)
     bom=models.ForeignKey('BomMan.BOM',verbose_name='BOM',related_name='bom_order',on_delete=models.CASCADE)
     quantity = models.DecimalField(verbose_name=u'合同长度_km', max_digits=18, decimal_places=3)
-
+    week_no = models.SmallIntegerField(verbose_name=u'合同归属_周')
 
     steel_wire_weight = models.DecimalField(verbose_name=u'钢丝重量_kg', max_digits=18, decimal_places=3, null=True,
                                             blank=True)

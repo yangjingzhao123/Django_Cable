@@ -11,7 +11,7 @@
  Target Server Version : 80012
  File Encoding         : 65001
 
- Date: 30/08/2018 11:52:52
+ Date: 02/09/2018 13:02:27
 */
 
 SET NAMES utf8mb4;
@@ -26,7 +26,7 @@ CREATE TABLE `auth_group`  (
   `name` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `name`(`name`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for auth_group_permissions
@@ -178,7 +178,6 @@ CREATE TABLE `auth_user_user_permissions`  (
 DROP TABLE IF EXISTS `bomman_bom`;
 CREATE TABLE `bomman_bom`  (
   `bom_id` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `customer` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `steel_wire_weight` decimal(18, 3) NULL DEFAULT NULL,
   `consume_coefficient_sw` decimal(18, 3) NOT NULL,
   `aluminum_band_weight` decimal(18, 3) NULL DEFAULT NULL,
@@ -194,6 +193,7 @@ CREATE TABLE `bomman_bom`  (
   `remark` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `aluminum_band_id` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `cable_structure_id` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `customer_id` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `product_id` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `steel_band_id` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `steel_wire_id` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
@@ -203,8 +203,10 @@ CREATE TABLE `bomman_bom`  (
   INDEX `BomMan_bom_product_id_608ce01e_fk_SysSettin`(`product_id`) USING BTREE,
   INDEX `BomMan_bom_steel_band_id_4e6a0c7d_fk_SysSettin`(`steel_band_id`) USING BTREE,
   INDEX `BomMan_bom_steel_wire_id_60cf6df1_fk_SysSettin`(`steel_wire_id`) USING BTREE,
+  INDEX `BomMan_bom_customer_id_243f32a2_fk_SysSettin`(`customer_id`) USING BTREE,
   CONSTRAINT `BomMan_bom_aluminum_band_id_4289d479_fk_SysSettin` FOREIGN KEY (`aluminum_band_id`) REFERENCES `syssetting_objectcode` (`object_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `BomMan_bom_cable_structure_id_c6484357_fk_SysSettin` FOREIGN KEY (`cable_structure_id`) REFERENCES `syssetting_objectcode` (`object_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `BomMan_bom_customer_id_243f32a2_fk_SysSettin` FOREIGN KEY (`customer_id`) REFERENCES `syssetting_objectcode` (`object_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `BomMan_bom_product_id_608ce01e_fk_SysSettin` FOREIGN KEY (`product_id`) REFERENCES `syssetting_objectcode` (`object_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `BomMan_bom_steel_band_id_4e6a0c7d_fk_SysSettin` FOREIGN KEY (`steel_band_id`) REFERENCES `syssetting_objectcode` (`object_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `BomMan_bom_steel_wire_id_60cf6df1_fk_SysSettin` FOREIGN KEY (`steel_wire_id`) REFERENCES `syssetting_objectcode` (`object_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
@@ -213,10 +215,9 @@ CREATE TABLE `bomman_bom`  (
 -- ----------------------------
 -- Records of bomman_bom
 -- ----------------------------
-INSERT INTO `bomman_bom` VALUES ('0a6428b0ac0511e89553448a5b76fe04', 'LT', NULL, 1.020, 10.481, 1.020, NULL, 1.010, NULL, NULL, '2018-08-30 03:30:28.422010', NULL, '2018-08-30 03:30:28.422010', NULL, NULL, '3b4a9088abfb11e88779448a5b76fe04', '1935dd50aba311e889c2448a5b76fe04', 'f6fefe5aabfb11e89976448a5b76fe04', '8b323b70abfb11e89a80448a5b76fe04', '8946cff4abf911e8a295448a5b76fe04');
-INSERT INTO `bomman_bom` VALUES ('2b04b6e2ac0511e8a6ca448a5b76fe04', 'ZY', 12.084, 1.020, 7.927, 1.020, NULL, 1.010, NULL, NULL, '2018-08-30 03:31:23.164314', NULL, '2018-08-30 03:31:23.164314', NULL, NULL, '0fbfea88abfb11e89664448a5b76fe04', 'b2816d48aba211e8a4ca448a5b76fe04', 'f6fefe5aabfb11e89976448a5b76fe04', '5fa6ad26abfb11e8b526448a5b76fe04', '8946cff4abf911e8a295448a5b76fe04');
-INSERT INTO `bomman_bom` VALUES ('ce755f14ac0411e8a379448a5b76fe04', 'DX', 12.084, 1.020, 10.481, 1.020, NULL, 1.010, NULL, NULL, '2018-08-30 03:28:47.878513', NULL, '2018-08-30 03:28:47.878513', NULL, NULL, '3b4a9088abfb11e88779448a5b76fe04', '1935dd50aba311e889c2448a5b76fe04', 'f6fefe5aabfb11e89976448a5b76fe04', '8b323b70abfb11e89a80448a5b76fe04', '8946cff4abf911e8a295448a5b76fe04');
-INSERT INTO `bomman_bom` VALUES ('ece1dcc0ac0411e8a6c6448a5b76fe04', 'YD', 10.481, 1.020, NULL, 1.020, NULL, 1.010, NULL, NULL, '2018-08-30 03:29:38.913172', NULL, '2018-08-30 03:29:38.913172', NULL, NULL, '3b4a9088abfb11e88779448a5b76fe04', '1935dd50aba311e889c2448a5b76fe04', 'f6fefe5aabfb11e89976448a5b76fe04', '8b323b70abfb11e89a80448a5b76fe04', '8946cff4abf911e8a295448a5b76fe04');
+INSERT INTO `bomman_bom` VALUES ('5fc5f61aade411e89f29448a5b76fe04', 12.084, 1.000, 10.481, 1.000, NULL, 1.000, NULL, NULL, '2018-09-01 12:41:40.602781', NULL, '2018-09-01 12:41:40.602781', NULL, NULL, '0fbfea88abfb11e89664448a5b76fe04', 'b2816d48aba211e8a4ca448a5b76fe04', '52ab9f3eadd011e8b142448a5b76fe04', 'f6fefe5aabfb11e89976448a5b76fe04', '5fa6ad26abfb11e8b526448a5b76fe04', '73ab645aabf911e8ba87448a5b76fe04');
+INSERT INTO `bomman_bom` VALUES ('697e7cb4ade411e8b60d448a5b76fe04', 10.481, 1.000, 11.700, 1.000, NULL, 1.000, NULL, NULL, '2018-09-01 12:41:56.920579', NULL, '2018-09-01 12:41:56.920579', NULL, NULL, '0fbfea88abfb11e89664448a5b76fe04', 'e915921aaba211e89bcd448a5b76fe04', '2cf7dbf6add011e88184448a5b76fe04', '0e187a06abfc11e8bb6b448a5b76fe04', '5fa6ad26abfb11e8b526448a5b76fe04', '73ab645aabf911e8ba87448a5b76fe04');
+INSERT INTO `bomman_bom` VALUES ('7137df9cade411e88817448a5b76fe04', NULL, 1.000, NULL, 1.000, NULL, 1.000, NULL, NULL, '2018-09-01 12:42:09.876580', NULL, '2018-09-01 12:42:09.876580', NULL, NULL, '285da206abfb11e88e5d448a5b76fe04', '000f058aaba311e89052448a5b76fe04', '2cf7dbf6add011e88184448a5b76fe04', '0e187a06abfc11e8bb6b448a5b76fe04', '7bf16fb8abfb11e8926b448a5b76fe04', '8946cff4abf911e8a295448a5b76fe04');
 
 -- ----------------------------
 -- Table structure for bomman_bomextend
@@ -249,6 +250,7 @@ CREATE TABLE `conman_order`  (
   `order_name` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `order_value` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `quantity` decimal(18, 3) NOT NULL,
+  `week_no` smallint(6) NOT NULL,
   `steel_wire_weight` decimal(18, 3) NULL DEFAULT NULL,
   `aluminum_band_weight` decimal(18, 3) NULL DEFAULT NULL,
   `steel_band_weight` decimal(18, 3) NULL DEFAULT NULL,
@@ -268,7 +270,10 @@ CREATE TABLE `conman_order`  (
 -- ----------------------------
 -- Records of conman_order
 -- ----------------------------
-INSERT INTO `conman_order` VALUES ('02feb5d0ac0711e8b52f448a5b76fe04', '2182307', '2182307', 10.000, NULL, 106.906, NULL, NULL, NULL, '2018-08-30 03:44:34.981578', NULL, '2018-08-30 03:44:34.981578', NULL, NULL, '0a6428b0ac0511e89553448a5b76fe04');
+INSERT INTO `conman_order` VALUES ('bb7cee38ae5811e89f0c448a5b76fe04', '2182307', '2182307', 10.000, 1, 120.840, 104.810, NULL, NULL, NULL, '2018-09-02 02:34:36.068204', NULL, '2018-09-02 02:34:36.068204', NULL, NULL, '5fc5f61aade411e89f29448a5b76fe04');
+INSERT INTO `conman_order` VALUES ('c269aa10ae5811e8b619448a5b76fe04', '2170356', '2170356', 11.000, 1, 115.291, 128.700, NULL, NULL, NULL, '2018-09-02 02:34:47.695989', NULL, '2018-09-02 02:34:47.695989', NULL, NULL, '697e7cb4ade411e8b60d448a5b76fe04');
+INSERT INTO `conman_order` VALUES ('c97e17d0ae5811e8926e448a5b76fe04', '2182307', '2182307', 55.000, 2, 576.455, 643.500, NULL, NULL, NULL, '2018-09-02 02:34:59.563924', NULL, '2018-09-02 02:34:59.563924', NULL, NULL, '697e7cb4ade411e8b60d448a5b76fe04');
+INSERT INTO `conman_order` VALUES ('f14352d2ae5911e880bf448a5b76fe04', '2182307', '2182307', 12.000, 4, 125.772, 140.400, NULL, NULL, NULL, '2018-09-02 02:43:15.784366', NULL, '2018-09-02 02:43:15.784366', NULL, NULL, '697e7cb4ade411e8b60d448a5b76fe04');
 
 -- ----------------------------
 -- Table structure for django_admin_log
@@ -288,7 +293,7 @@ CREATE TABLE `django_admin_log`  (
   INDEX `django_admin_log_user_id_c564eba6_fk_auth_user_id`(`user_id`) USING BTREE,
   CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 49 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 57 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of django_admin_log
@@ -348,6 +353,40 @@ INSERT INTO `django_admin_log` VALUES (52, '2018-08-30 03:31:23.166314', '2b04b6
 INSERT INTO `django_admin_log` VALUES (53, '2018-08-30 03:37:58.357852', '1695f84a-ac06-11e8-877c-448a5b76fe04', '2182307 2182307', 1, '[{\"added\": {}}]', 8, 1);
 INSERT INTO `django_admin_log` VALUES (54, '2018-08-30 03:44:16.165833', 'f7c6e494-ac06-11e8-8fde-448a5b76fe04', '2182307 2182307', 1, '[{\"added\": {}}]', 8, 1);
 INSERT INTO `django_admin_log` VALUES (55, '2018-08-30 03:44:34.985575', '02fd2f66-ac07-11e8-9fc9-448a5b76fe04', '2182307 2182307', 1, '[{\"added\": {}}]', 8, 1);
+INSERT INTO `django_admin_log` VALUES (56, '2018-09-01 08:37:14.648296', '3a2ceab8-adc2-11e8-a84c-448a5b76fe04', '2170356 2182307', 1, '[{\"added\": {}}]', 8, 1);
+INSERT INTO `django_admin_log` VALUES (57, '2018-09-01 08:56:04.699409', 'dbc14e36-adc4-11e8-9198-448a5b76fe04', '21823078 None', 1, '[{\"added\": {}}]', 8, 1);
+INSERT INTO `django_admin_log` VALUES (58, '2018-09-01 08:56:17.218138', 'e336e6e2-adc4-11e8-bf5e-448a5b76fe04', '2170356 None', 1, '[{\"added\": {}}]', 8, 1);
+INSERT INTO `django_admin_log` VALUES (59, '2018-09-01 08:56:35.664889', '02feb5d0-ac07-11e8-b52f-448a5b76fe04', '2182307 2182307', 3, '', 8, 1);
+INSERT INTO `django_admin_log` VALUES (60, '2018-09-01 09:39:44.106843', 'f5097ba2-adca-11e8-abd5-448a5b76fe04', '客户分类', 1, '[{\"added\": {}}]', 3, 1);
+INSERT INTO `django_admin_log` VALUES (61, '2018-09-01 09:40:50.408660', '1c8f672e-adcb-11e8-bae6-448a5b76fe04', '电信', 1, '[{\"added\": {}}]', 3, 1);
+INSERT INTO `django_admin_log` VALUES (62, '2018-09-01 09:41:03.447050', '24542486-adcb-11e8-b1ce-448a5b76fe04', '移动', 1, '[{\"added\": {}}]', 3, 1);
+INSERT INTO `django_admin_log` VALUES (63, '2018-09-01 09:41:38.668351', '3952f1cc-adcb-11e8-a2ea-448a5b76fe04', '联通', 1, '[{\"added\": {}}]', 3, 1);
+INSERT INTO `django_admin_log` VALUES (64, '2018-09-01 09:41:53.042283', '41e4899c-adcb-11e8-8efa-448a5b76fe04', '自营', 1, '[{\"added\": {}}]', 3, 1);
+INSERT INTO `django_admin_log` VALUES (65, '2018-09-01 10:17:05.427401', '2cf7dbf6-add0-11e8-8184-448a5b76fe04', '客户_电信', 1, '[{\"added\": {}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (66, '2018-09-01 10:18:08.680194', '52ab9f3e-add0-11e8-b142-448a5b76fe04', '客户_联通', 1, '[{\"added\": {}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (67, '2018-09-01 10:18:48.284254', '6a477c02-add0-11e8-af8b-448a5b76fe04', '客户_自营', 1, '[{\"added\": {}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (68, '2018-09-01 10:21:49.725991', 'd6697bde-add0-11e8-88f3-448a5b76fe04', '客户_电信 光缆型号_GYTA_2-12 钢丝_1.0 光缆结构_1.6*5', 1, '[{\"added\": {}}]', 6, 1);
+INSERT INTO `django_admin_log` VALUES (69, '2018-09-01 10:25:54.400390', '6843577e-add1-11e8-aaea-448a5b76fe04', '客户_移动', 1, '[{\"added\": {}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (70, '2018-09-01 10:27:05.910507', '6a477c02-add0-11e8-af8b-448a5b76fe04', '客户_移动', 2, '[{\"changed\": {\"fields\": [\"category\", \"object_name\", \"object_value\", \"type\"]}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (71, '2018-09-01 10:27:26.119234', '6843577e-add1-11e8-aaea-448a5b76fe04', '客户_自营', 2, '[{\"changed\": {\"fields\": [\"category\", \"object_name\", \"object_value\", \"type\"]}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (72, '2018-09-01 10:27:48.140749', 'ac0bff86-add1-11e8-a1dd-448a5b76fe04', '客户_电信 光缆型号_GYTA_14-30 钢丝_1.4 光缆结构_1.6*5', 1, '[{\"added\": {}}]', 6, 1);
+INSERT INTO `django_admin_log` VALUES (73, '2018-09-01 10:28:44.222103', 'ac0bff86-add1-11e8-a1dd-448a5b76fe04', '客户_联通 光缆型号_GYTA_14-30 钢丝_1.4 光缆结构_1.6*5', 2, '[{\"changed\": {\"fields\": [\"customer\"]}}]', 6, 1);
+INSERT INTO `django_admin_log` VALUES (74, '2018-09-01 10:32:30.904654', '5496319a-add2-11e8-ad6d-448a5b76fe04', '客户_联通 光缆型号_GYTA_2-12 钢丝_1.0 光缆结构_1.6*5', 1, '[{\"added\": {}}]', 6, 1);
+INSERT INTO `django_admin_log` VALUES (75, '2018-09-01 10:51:58.415282', '0c7aa2b0-add5-11e8-bc68-448a5b76fe04', '运营商 GYTA_32-36 1.4 1.8*5(12芯以上)', 1, '[{\"added\": {}}]', 6, 1);
+INSERT INTO `django_admin_log` VALUES (76, '2018-09-01 12:22:05.557516', '2cf7dbf6-add0-11e8-8184-448a5b76fe04', '电信', 2, '[{\"changed\": {\"fields\": [\"type\"]}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (77, '2018-09-01 12:22:16.419261', '52ab9f3e-add0-11e8-b142-448a5b76fe04', '联通', 2, '[{\"changed\": {\"fields\": [\"type\"]}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (78, '2018-09-01 12:22:26.262500', '6a477c02-add0-11e8-af8b-448a5b76fe04', '移动', 2, '[{\"changed\": {\"fields\": [\"type\"]}}]', 4, 1);
+INSERT INTO `django_admin_log` VALUES (79, '2018-09-01 12:22:57.559459', 'd6697bde-add0-11e8-88f3-448a5b76fe04', '电信 GYTA_2-12 1.0 1.6*5', 3, '', 6, 1);
+INSERT INTO `django_admin_log` VALUES (80, '2018-09-01 12:22:57.600435', 'ac0bff86-add1-11e8-a1dd-448a5b76fe04', '联通 GYTA_14-30 1.4 1.6*5', 3, '', 6, 1);
+INSERT INTO `django_admin_log` VALUES (81, '2018-09-01 12:22:57.609428', '5496319a-add2-11e8-ad6d-448a5b76fe04', '联通 GYTA_2-12 1.0 1.6*5', 3, '', 6, 1);
+INSERT INTO `django_admin_log` VALUES (82, '2018-09-01 12:22:57.618423', '0c7aa2b0-add5-11e8-bc68-448a5b76fe04', '电信 GYTA_32-36 1.4 1.8*5(12芯以上)', 3, '', 6, 1);
+INSERT INTO `django_admin_log` VALUES (83, '2018-09-01 12:41:40.604781', '5fc5f61a-ade4-11e8-9f29-448a5b76fe04', '联通 GYTA_2-12 1.0 1.6*5', 1, '[{\"added\": {}}]', 6, 1);
+INSERT INTO `django_admin_log` VALUES (84, '2018-09-01 12:41:56.921578', '697e7cb4-ade4-11e8-b60d-448a5b76fe04', '电信 GYTA_14-30 1.0 1.6*5(12芯以上)', 1, '[{\"added\": {}}]', 6, 1);
+INSERT INTO `django_admin_log` VALUES (85, '2018-09-01 12:42:09.879579', '7137df9c-ade4-11e8-8817-448a5b76fe04', '电信 GYTA_14-30 1.4 1.6*6', 1, '[{\"added\": {}}]', 6, 1);
+INSERT INTO `django_admin_log` VALUES (86, '2018-09-02 02:34:36.078203', 'bb7b67ac-ae58-11e8-a56b-448a5b76fe04', '2182307 None', 1, '[{\"added\": {}}]', 8, 1);
+INSERT INTO `django_admin_log` VALUES (87, '2018-09-02 02:34:47.695989', 'c268237e-ae58-11e8-a866-448a5b76fe04', '2170356 None', 1, '[{\"added\": {}}]', 8, 1);
+INSERT INTO `django_admin_log` VALUES (88, '2018-09-02 02:34:59.563924', 'c97b0aa4-ae58-11e8-bb5d-448a5b76fe04', '2182307 None', 1, '[{\"added\": {}}]', 8, 1);
+INSERT INTO `django_admin_log` VALUES (89, '2018-09-02 02:43:15.794366', 'f141cc3a-ae59-11e8-b2bb-448a5b76fe04', '2182307 None', 1, '[{\"added\": {}}]', 8, 1);
 
 -- ----------------------------
 -- Table structure for django_content_type
@@ -389,7 +428,7 @@ CREATE TABLE `django_migrations`  (
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `applied` datetime(6) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of django_migrations
@@ -411,8 +450,10 @@ INSERT INTO `django_migrations` VALUES (16, 'auth', '0008_alter_user_username_ma
 INSERT INTO `django_migrations` VALUES (17, 'auth', '0009_alter_user_last_name_max_length', '2018-08-29 15:10:12.829528');
 INSERT INTO `django_migrations` VALUES (18, 'sessions', '0001_initial', '2018-08-29 15:10:12.959454');
 INSERT INTO `django_migrations` VALUES (19, 'SysSetting', '0002_auto_20180829_2343', '2018-08-29 15:43:53.003781');
-INSERT INTO `django_migrations` VALUES (20, 'BomMan', '0001_initial', '2018-08-30 03:26:38.533820');
-INSERT INTO `django_migrations` VALUES (21, 'ConMan', '0001_initial', '2018-08-30 03:27:15.323682');
+INSERT INTO `django_migrations` VALUES (25, 'BomMan', '0001_initial', '2018-09-01 10:14:47.924537');
+INSERT INTO `django_migrations` VALUES (26, 'BomMan', '0002_auto_20180901_1820', '2018-09-01 10:20:17.489997');
+INSERT INTO `django_migrations` VALUES (27, 'ConMan', '0001_initial', '2018-09-02 02:32:36.111414');
+INSERT INTO `django_migrations` VALUES (28, 'SysSetting', '0003_auto_20180902_1032', '2018-09-02 02:32:36.131411');
 
 -- ----------------------------
 -- Table structure for django_session
@@ -425,11 +466,6 @@ CREATE TABLE `django_session`  (
   PRIMARY KEY (`session_key`) USING BTREE,
   INDEX `django_session_expire_date_a5c62663`(`expire_date`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of django_session
--- ----------------------------
-INSERT INTO `django_session` VALUES ('lk5ryhg8croc86jfsapiaag1b7c0im3d', 'YTlkNmEwNzIxOThjMjA1ZjMzYjQ1MDM1ZDhmOGI3OTM2MDFlNzRmYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0NDhjMmRmZWE5N2E2MDY4ZWUyN2U3ZGZhMTc5YTMzZGIzOTk2ZDdlIn0=', '2018-09-12 15:11:06.674862');
 
 -- ----------------------------
 -- Table structure for syssetting_basicmodel
@@ -509,15 +545,20 @@ CREATE TABLE `syssetting_category`  (
 -- ----------------------------
 -- Records of syssetting_category
 -- ----------------------------
-INSERT INTO `syssetting_category` VALUES ('283ce28caba011e8a305448a5b76fe04', '分类设置', 'Classification', 0, NULL, '2018-08-29 15:28:19.309592', NULL, '2018-08-29 15:28:19.309592', NULL, NULL, 1, 18, 1, 0, NULL);
-INSERT INTO `syssetting_category` VALUES ('357adde4aba011e882fe448a5b76fe04', '成品分类', 'ProductClassification', 0, NULL, '2018-08-29 15:28:41.528175', NULL, '2018-08-29 15:28:41.528175', NULL, NULL, 10, 15, 1, 1, '283ce28caba011e8a305448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('1c8f672eadcb11e8bae6448a5b76fe04', '电信', 'DX', 1, NULL, '2018-09-01 09:40:50.407662', NULL, '2018-09-01 09:40:50.407662', NULL, NULL, 11, 12, 1, 2, 'f5097ba2adca11e8abd5448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('24542486adcb11e8b1ce448a5b76fe04', '移动', 'YD', 1, NULL, '2018-09-01 09:41:03.444051', NULL, '2018-09-01 09:41:03.444051', NULL, NULL, 13, 14, 1, 2, 'f5097ba2adca11e8abd5448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('283ce28caba011e8a305448a5b76fe04', '分类设置', 'Classification', 0, NULL, '2018-08-29 15:28:19.309592', NULL, '2018-08-29 15:28:19.309592', NULL, NULL, 1, 28, 1, 0, NULL);
+INSERT INTO `syssetting_category` VALUES ('357adde4aba011e882fe448a5b76fe04', '成品分类', 'ProductClassification', 0, NULL, '2018-08-29 15:28:41.528175', NULL, '2018-08-29 15:28:41.528175', NULL, NULL, 20, 25, 1, 1, '283ce28caba011e8a305448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('3952f1ccadcb11e8a2ea448a5b76fe04', '联通', 'LT', 1, NULL, '2018-09-01 09:41:38.666352', NULL, '2018-09-01 09:41:38.666352', NULL, NULL, 15, 16, 1, 2, 'f5097ba2adca11e8abd5448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('41e4899cadcb11e88efa448a5b76fe04', '自营', 'ZY', 1, NULL, '2018-09-01 09:41:53.041284', NULL, '2018-09-01 09:41:53.041284', NULL, NULL, 17, 18, 1, 2, 'f5097ba2adca11e8abd5448a5b76fe04');
 INSERT INTO `syssetting_category` VALUES ('4306d106aba011e89941448a5b76fe04', '原材料分类', 'RawClassification', 0, NULL, '2018-08-29 15:29:04.260727', NULL, '2018-08-29 15:29:04.260727', NULL, NULL, 2, 9, 1, 1, '283ce28caba011e8a305448a5b76fe04');
-INSERT INTO `syssetting_category` VALUES ('4d2b33b6aba011e8b470448a5b76fe04', '设备分类', 'EquipmentClassification', 0, NULL, '2018-08-29 15:29:21.274401', NULL, '2018-08-29 15:29:21.274401', NULL, NULL, 16, 17, 1, 1, '283ce28caba011e8a305448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('4d2b33b6aba011e8b470448a5b76fe04', '设备分类', 'EquipmentClassification', 0, NULL, '2018-08-29 15:29:21.274401', NULL, '2018-08-29 15:29:21.274401', NULL, NULL, 26, 27, 1, 1, '283ce28caba011e8a305448a5b76fe04');
 INSERT INTO `syssetting_category` VALUES ('587a095caba011e8b965448a5b76fe04', '钢丝编码', 'SteelWireCode', 1, NULL, '2018-08-29 15:29:40.243990', NULL, '2018-08-29 15:29:40.243990', NULL, NULL, 3, 4, 1, 2, '4306d106aba011e89941448a5b76fe04');
 INSERT INTO `syssetting_category` VALUES ('622870c0aba011e8a2ad448a5b76fe04', '铝带编码', 'AluminumBandCode', 1, NULL, '2018-08-29 15:29:56.493454', NULL, '2018-08-29 15:29:56.493454', NULL, NULL, 7, 8, 1, 2, '4306d106aba011e89941448a5b76fe04');
 INSERT INTO `syssetting_category` VALUES ('70472788aba011e8a15e448a5b76fe04', '钢带编码', 'SteelBandCode', 1, NULL, '2018-08-29 15:30:20.181844', NULL, '2018-08-29 15:30:20.181844', NULL, NULL, 5, 6, 1, 2, '4306d106aba011e89941448a5b76fe04');
-INSERT INTO `syssetting_category` VALUES ('7c0de228aba011e89560448a5b76fe04', '光缆编码', 'CableCode', 1, NULL, '2018-08-29 15:30:39.930177', NULL, '2018-08-29 15:30:39.930177', NULL, NULL, 13, 14, 1, 2, '357adde4aba011e882fe448a5b76fe04');
-INSERT INTO `syssetting_category` VALUES ('88419280aba011e89209448a5b76fe04', '光缆结构', 'CableStructure', 1, NULL, '2018-08-29 15:31:00.408580', NULL, '2018-08-29 15:31:00.408580', NULL, NULL, 11, 12, 1, 2, '357adde4aba011e882fe448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('7c0de228aba011e89560448a5b76fe04', '光缆编码', 'CableCode', 1, NULL, '2018-08-29 15:30:39.930177', NULL, '2018-08-29 15:30:39.930177', NULL, NULL, 23, 24, 1, 2, '357adde4aba011e882fe448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('88419280aba011e89209448a5b76fe04', '光缆结构', 'CableStructure', 1, NULL, '2018-08-29 15:31:00.408580', NULL, '2018-08-29 15:31:00.408580', NULL, NULL, 21, 22, 1, 2, '357adde4aba011e882fe448a5b76fe04');
+INSERT INTO `syssetting_category` VALUES ('f5097ba2adca11e8abd5448a5b76fe04', '客户分类', 'KHFL', 0, NULL, '2018-09-01 09:39:44.104844', NULL, '2018-09-01 09:39:44.104844', NULL, NULL, 10, 19, 1, 1, '283ce28caba011e8a305448a5b76fe04');
 
 -- ----------------------------
 -- Table structure for syssetting_objectcode
@@ -555,14 +596,18 @@ INSERT INTO `syssetting_objectcode` VALUES ('22df60b6aba411e8841f448a5b76fe04', 
 INSERT INTO `syssetting_objectcode` VALUES ('26fb3624abfc11e88b3f448a5b76fe04', '光缆型号_GYTA_32-36', 'GLXH_GYTA_32-36', 'GYTA', '32-36', 'km', NULL, '2018-08-30 02:26:50.900602', NULL, '2018-08-30 02:26:50.900602', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('285da206abfb11e88e5d448a5b76fe04', '铝带_20.5', 'LD_20.5', '20.5', NULL, 'kg', NULL, '2018-08-30 02:19:43.726607', NULL, '2018-08-30 02:19:43.726607', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('29635376abfa11e892aa448a5b76fe04', '钢丝_1.8', 'GS_1.8', '1.8', NULL, 'kg', NULL, '2018-08-30 02:12:35.944910', NULL, '2018-08-30 02:12:35.944910', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
+INSERT INTO `syssetting_objectcode` VALUES ('2cf7dbf6add011e88184448a5b76fe04', '客户_电信', 'KH_DX', '电信', NULL, NULL, NULL, '2018-09-01 10:17:05.415408', NULL, '2018-09-01 12:22:05.552518', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('36100e28aba411e892d7448a5b76fe04', '光缆结构_1.85*5', 'GLJG_1.85*5', '1.85*5', NULL, NULL, NULL, '2018-08-29 15:57:20.487819', NULL, '2018-08-29 15:57:20.488818', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('3b2254dcaba311e89155448a5b76fe04', '光缆结构_1.8*5(12芯以上)', 'GLJG_1.8*5(glt12core)', '1.8*5(12芯以上)', NULL, NULL, NULL, '2018-08-29 15:50:19.502470', NULL, '2018-08-29 15:50:19.502470', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('3b4a9088abfb11e88779448a5b76fe04', '铝带_21.5', 'lD_21.5', '21.5', NULL, 'kg', NULL, '2018-08-30 02:20:15.478351', NULL, '2018-08-30 02:20:15.478351', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('3db0ac92abfa11e8a121448a5b76fe04', '钢丝_1.9', 'GS_1.9', '1.9', NULL, 'kg', NULL, '2018-08-30 02:13:10.006250', NULL, '2018-08-30 02:13:10.006250', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('413e8c5caba411e88ea9448a5b76fe04', '光缆结构_12F', 'GLJG_12F', '12F', NULL, NULL, NULL, '2018-08-29 15:57:39.251450', NULL, '2018-08-29 15:57:39.251450', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
+INSERT INTO `syssetting_objectcode` VALUES ('52ab9f3eadd011e8b142448a5b76fe04', '客户_联通', 'KH_LT', '联通', NULL, NULL, NULL, '2018-09-01 10:18:08.668202', NULL, '2018-09-01 12:22:16.412266', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('573ac6dcaba411e8b46d448a5b76fe04', '光缆结构_2.0*10', 'GLJG_2.0*10', '2.0*10', NULL, NULL, NULL, '2018-08-29 15:58:16.140606', NULL, '2018-08-29 15:58:16.140606', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('5fa6ad26abfb11e8b526448a5b76fe04', '钢带_20.00', 'GD_20.00', '20.00', NULL, 'kg', NULL, '2018-08-30 02:21:16.479993', NULL, '2018-08-30 02:21:16.479993', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('66f4be2caba411e880bb448a5b76fe04', '光缆结构_2.0*12', 'GLJG_2.0*12', '2.0*12', NULL, NULL, NULL, '2018-08-29 15:58:42.520180', NULL, '2018-08-29 15:58:42.520180', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
+INSERT INTO `syssetting_objectcode` VALUES ('6843577eadd111e8aaea448a5b76fe04', '客户_自营', 'KH_ZY', '自营', NULL, NULL, NULL, '2018-09-01 10:25:54.392394', NULL, '2018-09-01 10:27:26.107241', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
+INSERT INTO `syssetting_objectcode` VALUES ('6a477c02add011e8af8b448a5b76fe04', '客户_移动', 'KH_YD', '移动', NULL, NULL, NULL, '2018-09-01 10:18:48.277258', NULL, '2018-09-01 12:22:26.258503', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('73ab645aabf911e8ba87448a5b76fe04', '钢丝_1.0', 'GS_1.0', '1.0', NULL, 'kg', NULL, '2018-08-30 02:07:31.081869', NULL, '2018-08-30 02:07:31.081869', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('7bf16fb8abfb11e8926b448a5b76fe04', '钢带_21.00', 'GD_21.00', '21.00', NULL, 'kg', NULL, '2018-08-30 02:22:03.946145', NULL, '2018-08-30 02:22:03.946145', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
 INSERT INTO `syssetting_objectcode` VALUES ('803e7ad4abfa11e8853c448a5b76fe04', '钢丝_2.0', 'GS_2.0', '2.0', NULL, 'kg', NULL, '2018-08-30 02:15:01.665213', NULL, '2018-08-30 02:15:01.665213', NULL, NULL, 'ff0b330aab9f11e8bee6448a5b76fe04');
@@ -608,14 +653,18 @@ INSERT INTO `syssetting_objectcode_category` VALUES (8, '22df60b6aba411e8841f448
 INSERT INTO `syssetting_objectcode_category` VALUES (35, '26fb3624abfc11e88b3f448a5b76fe04', '7c0de228aba011e89560448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (28, '285da206abfb11e88e5d448a5b76fe04', '622870c0aba011e8a2ad448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (23, '29635376abfa11e892aa448a5b76fe04', '587a095caba011e8b965448a5b76fe04');
+INSERT INTO `syssetting_objectcode_category` VALUES (36, '2cf7dbf6add011e88184448a5b76fe04', '1c8f672eadcb11e8bae6448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (9, '36100e28aba411e892d7448a5b76fe04', '88419280aba011e89209448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (6, '3b2254dcaba311e89155448a5b76fe04', '88419280aba011e89209448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (29, '3b4a9088abfb11e88779448a5b76fe04', '622870c0aba011e8a2ad448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (24, '3db0ac92abfa11e8a121448a5b76fe04', '587a095caba011e8b965448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (10, '413e8c5caba411e88ea9448a5b76fe04', '88419280aba011e89209448a5b76fe04');
+INSERT INTO `syssetting_objectcode_category` VALUES (37, '52ab9f3eadd011e8b142448a5b76fe04', '3952f1ccadcb11e8a2ea448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (11, '573ac6dcaba411e8b46d448a5b76fe04', '88419280aba011e89209448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (30, '5fa6ad26abfb11e8b526448a5b76fe04', '70472788aba011e8a15e448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (12, '66f4be2caba411e880bb448a5b76fe04', '88419280aba011e89209448a5b76fe04');
+INSERT INTO `syssetting_objectcode_category` VALUES (41, '6843577eadd111e8aaea448a5b76fe04', '41e4899cadcb11e88efa448a5b76fe04');
+INSERT INTO `syssetting_objectcode_category` VALUES (40, '6a477c02add011e8af8b448a5b76fe04', '24542486adcb11e8b1ce448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (17, '73ab645aabf911e8ba87448a5b76fe04', '587a095caba011e8b965448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (31, '7bf16fb8abfb11e8926b448a5b76fe04', '70472788aba011e8a15e448a5b76fe04');
 INSERT INTO `syssetting_objectcode_category` VALUES (25, '803e7ad4abfa11e8853c448a5b76fe04', '587a095caba011e8b965448a5b76fe04');
@@ -659,36 +708,42 @@ CREATE TABLE `syssetting_objectextend`  (
 -- View structure for bom_ab
 -- ----------------------------
 DROP VIEW IF EXISTS `bom_ab`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_ab` AS select `syssetting_bom`.`bom_no` AS `bom_no`,`syssetting_material`.`material_type` AS `铝带型号` from (`syssetting_material` join `syssetting_bom` on((`syssetting_bom`.`aluminum_band_no_id` = `syssetting_material`.`material_no`)));
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_ab` AS select `bomman_bom`.`bom_id` AS `bom_id`,`syssetting_objectcode`.`type` AS `铝带型号` from (`syssetting_objectcode` join `bomman_bom` on((`bomman_bom`.`aluminum_band_id` = `syssetting_objectcode`.`object_id`)));
+
+-- ----------------------------
+-- View structure for bom_cus
+-- ----------------------------
+DROP VIEW IF EXISTS `bom_cus`;
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_cus` AS select `syssetting_objectcode`.`object_name` AS `客户名称`,`bomman_bom`.`bom_id` AS `bom_id` from (`syssetting_objectcode` join `bomman_bom` on((`bomman_bom`.`customer_id` = `syssetting_objectcode`.`object_id`)));
 
 -- ----------------------------
 -- View structure for bom_product
 -- ----------------------------
 DROP VIEW IF EXISTS `bom_product`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_product` AS select `syssetting_bom`.`bom_no` AS `bom_no`,`syssetting_material`.`material_type` AS `光缆型号`,`syssetting_material`.`material_specification` AS `芯数` from (`syssetting_bom` join `syssetting_material` on((`syssetting_bom`.`product_no_id` = `syssetting_material`.`material_no`)));
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_product` AS select `bomman_bom`.`bom_id` AS `bom_id`,`syssetting_objectcode`.`type` AS `光缆型号`,`syssetting_objectcode`.`specification` AS `芯数` from (`bomman_bom` join `syssetting_objectcode` on((`bomman_bom`.`product_id` = `syssetting_objectcode`.`object_id`)));
 
 -- ----------------------------
 -- View structure for bom_report
 -- ----------------------------
 DROP VIEW IF EXISTS `bom_report`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_report` AS select `syssetting_order`.`order_name` AS `订单编号`,`syssetting_bom`.`customer` AS `客户名称`,`bom_product`.`光缆型号` AS `光缆型号`,`bom_product`.`芯数` AS `芯数`,`bom_structure`.`光缆结构` AS `光缆结构`,`bom_sw`.`钢丝型号` AS `钢丝型号`,`bom_ab`.`铝带型号` AS `铝带型号`,`bom_sb`.`钢带型号` AS `钢带型号`,`syssetting_order`.`quantity` AS `订单数量`,`syssetting_order`.`steel_wire_weight` AS `钢丝需求数量`,`syssetting_order`.`aluminum_band_weight` AS `铝带需求数量`,`syssetting_order`.`steel_band_weight` AS `钢带需求数量`,`syssetting_order`.`aluminum_band_width` AS `铝带要求宽度`,`syssetting_bom`.`steel_wire_weight` AS `BOM钢丝标准`,`syssetting_bom`.`aluminum_band_weight` AS `BOM铝带标准`,`syssetting_bom`.`steel_band_weight` AS `BOM钢带标准`,`syssetting_bom`.`consume_coefficient_sw` AS `BOM钢丝消耗系数`,`syssetting_bom`.`consume_coefficient_ab` AS `BOM铝带消耗系数`,`syssetting_bom`.`consume_coefficient_sb` AS `BOM钢带消耗系数`,`syssetting_bom`.`aluminum_band_width` AS `BOM铝带宽度标准`,`syssetting_order`.`create_time` AS `合同录入时间` from ((((((`syssetting_order` join `syssetting_bom` on((`syssetting_order`.`bom_no_id` = `syssetting_bom`.`bom_no`))) join `bom_ab` on((`bom_ab`.`bom_no` = `syssetting_bom`.`bom_no`))) join `bom_product` on((`bom_product`.`bom_no` = `syssetting_bom`.`bom_no`))) join `bom_sb` on((`bom_sb`.`bom_no` = `syssetting_bom`.`bom_no`))) join `bom_structure` on((`bom_structure`.`bom_no` = `syssetting_bom`.`bom_no`))) join `bom_sw` on((`bom_sw`.`bom_no` = `syssetting_bom`.`bom_no`)));
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_report` AS select `conman_order`.`week_no` AS `week_no`,`conman_order`.`order_name` AS `order_no`,`bom_cus`.`客户名称` AS `customer`,`bom_product`.`光缆型号` AS `cable_type`,`bom_product`.`芯数` AS `core`,`bom_structure`.`光缆结构` AS `structure`,`bom_sw`.`钢丝型号` AS `GSType`,`bom_ab`.`铝带型号` AS `LDType`,`bom_sb`.`钢带型号` AS `GDType`,`conman_order`.`quantity` AS `quantity`,`conman_order`.`steel_wire_weight` AS `GSXQ`,`conman_order`.`aluminum_band_weight` AS `LDXQ`,`conman_order`.`steel_band_weight` AS `GDXQ`,`conman_order`.`aluminum_band_width` AS `LDKD`,`bomman_bom`.`steel_wire_weight` AS `BOM_GS`,`bomman_bom`.`aluminum_band_weight` AS `BOM_LD`,`bomman_bom`.`steel_band_weight` AS `BOM_GD`,`bomman_bom`.`consume_coefficient_sw` AS `BOM_GSXS`,`bomman_bom`.`consume_coefficient_ab` AS `BOM_LDXS`,`bomman_bom`.`consume_coefficient_sb` AS `BOM_GDXS`,`bomman_bom`.`aluminum_band_width` AS `BOM_LDKD`,`conman_order`.`create_time` AS `Sysdate` from (((((((`conman_order` join `bomman_bom` on((`conman_order`.`bom_id` = `bomman_bom`.`bom_id`))) join `bom_ab` on((`bom_ab`.`bom_id` = `bomman_bom`.`bom_id`))) join `bom_product` on((`bom_product`.`bom_id` = `bomman_bom`.`bom_id`))) join `bom_sb` on((`bom_sb`.`bom_id` = `bomman_bom`.`bom_id`))) join `bom_structure` on((`bom_structure`.`bom_id` = `bomman_bom`.`bom_id`))) join `bom_sw` on((`bom_sw`.`bom_id` = `bomman_bom`.`bom_id`))) join `bom_cus` on((`bom_cus`.`bom_id` = `bomman_bom`.`bom_id`)));
 
 -- ----------------------------
 -- View structure for bom_sb
 -- ----------------------------
 DROP VIEW IF EXISTS `bom_sb`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_sb` AS select `syssetting_bom`.`bom_no` AS `bom_no`,`syssetting_material`.`material_type` AS `钢带型号` from (`syssetting_material` join `syssetting_bom` on((`syssetting_bom`.`steel_band_no_id` = `syssetting_material`.`material_no`)));
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_sb` AS select `bomman_bom`.`bom_id` AS `bom_id`,`syssetting_objectcode`.`type` AS `钢带型号` from (`syssetting_objectcode` join `bomman_bom` on((`bomman_bom`.`steel_band_id` = `syssetting_objectcode`.`object_id`)));
 
 -- ----------------------------
 -- View structure for bom_structure
 -- ----------------------------
 DROP VIEW IF EXISTS `bom_structure`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_structure` AS select `syssetting_bom`.`bom_no` AS `bom_no`,`syssetting_material`.`material_type` AS `光缆结构` from (`syssetting_bom` join `syssetting_material` on((`syssetting_bom`.`cable_structure_id` = `syssetting_material`.`material_no`)));
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_structure` AS select `bomman_bom`.`bom_id` AS `bom_id`,`syssetting_objectcode`.`type` AS `光缆结构` from (`bomman_bom` join `syssetting_objectcode` on((`bomman_bom`.`cable_structure_id` = `syssetting_objectcode`.`object_id`)));
 
 -- ----------------------------
 -- View structure for bom_sw
 -- ----------------------------
 DROP VIEW IF EXISTS `bom_sw`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_sw` AS select `syssetting_bom`.`bom_no` AS `bom_no`,`syssetting_material`.`material_type` AS `钢丝型号` from (`syssetting_bom` join `syssetting_material` on((`syssetting_bom`.`steel_wire_no_id` = `syssetting_material`.`material_no`)));
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `bom_sw` AS select `bomman_bom`.`bom_id` AS `bom_id`,`syssetting_objectcode`.`type` AS `钢丝型号` from (`bomman_bom` join `syssetting_objectcode` on((`bomman_bom`.`steel_wire_id` = `syssetting_objectcode`.`object_id`)));
 
 SET FOREIGN_KEY_CHECKS = 1;

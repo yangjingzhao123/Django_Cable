@@ -367,3 +367,17 @@ sl:warn] [pid 3048:tid 612] AH01909: localhost:443:0 server certificate does NOT
 [Tue Aug 28 21:42:41.461137 2018] [ssl:warn] [pid 13140:tid 640] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
 [Tue Aug 28 21:42:41.571130 2018] [ssl:warn] [pid 13140:tid 640] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
 [Tue Aug 28 21:42:41.641126 2018] [mpm_winnt:notice] [pid 13140:tid 640] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 02 12:54:07.721603 2018] [mpm_winnt:notice] [pid 3048:tid 612] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 02 12:54:09.736961 2018] [mpm_winnt:notice] [pid 13140:tid 640] AH00364: Child: All worker threads have exited.
+[Sun Sep 02 12:54:10.172823 2018] [mpm_winnt:notice] [pid 3048:tid 612] AH00430: Parent: Child process 13140 exited successfully.
+[Sun Sep 02 12:54:14.574595 2018] [ssl:warn] [pid 10764:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Sep 02 12:54:14.772481 2018] [ssl:warn] [pid 10764:tid 612] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Sep 02 12:54:14.772481 2018] [mpm_winnt:notice] [pid 10764:tid 612] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Sun Sep 02 12:54:14.774481 2018] [mpm_winnt:notice] [pid 10764:tid 612] AH00456: Server built: Jul 10 2018 09:37:36
+[Sun Sep 02 12:54:14.774481 2018] [core:notice] [pid 10764:tid 612] AH00094: Command line: 'D:\\ProjectCode\\Django_Cable\\Apache24\\bin\\httpd.exe -d D:/ProjectCode/Django_Cable/Apache24'
+[Sun Sep 02 12:54:14.818455 2018] [mpm_winnt:notice] [pid 10764:tid 612] AH00418: Parent: Created child process 3624
+[Sun Sep 02 12:54:19.086995 2018] [ssl:warn] [pid 3624:tid 596] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Sep 02 12:54:19.229912 2018] [ssl:warn] [pid 3624:tid 596] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Sep 02 12:54:19.326856 2018] [mpm_winnt:notice] [pid 3624:tid 596] AH00354: Child: Starting 64 worker threads.
+(OS 5)¾Ü¾ø·ÃÎÊ¡£  : AH10014: Failed to open the 'Apache2.4' service
+[Sun Sep 02 12:58:40.493977 2018] [wsgi:error] [pid 3624:tid 1280] [client 127.0.0.1:55287] Not Found: /\r

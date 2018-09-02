@@ -8,20 +8,20 @@ admin.site.site_title = '天津长飞鑫茂光缆有限公司'
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    fields = ('order_name','order_value','bom','quantity')
-    list_display = ('order_name','order_value','bom','quantity','steel_wire_weight','aluminum_band_weight',
+    fields = ('week_no','order_name','bom','quantity')
+    list_display = ('week_no','order_name','bom','quantity','steel_wire_weight','aluminum_band_weight',
                     'steel_band_weight','aluminum_band_width' )
     list_per_page = 50
     # ordering设置默认排序字段，负号表示降序排序
     ordering = ('create_time',)
-    list_filter = ('order_name','bom')
+    list_filter = ('week_no','order_name','bom')
     # 搜索字段
-    search_fields = ('order_name','bom')
+    search_fields = ('week_no','order_name')
     date_hierarchy = 'create_time'  # 详细时间分层筛选
 
     def save_model(self, request, obj, form, change):
         or_name=request.POST['order_name']
-        order_value = request.POST['order_value']
+        wk_no=request.POST['week_no']
         con_quantity = request.POST['quantity']
         bom = BOM.objects.get(pk=request.POST['bom'])
 
@@ -41,7 +41,7 @@ class OrderAdmin(admin.ModelAdmin):
             gdzl =bom.steel_band_weight
 
         ldkd=bom.aluminum_band_width
-        obj = Order(order_name=or_name, order_value=order_value, quantity=con_quantity,bom=bom,
+        obj = Order(week_no=wk_no,order_name=or_name, order_value=or_name, quantity=con_quantity,bom=bom,
                        steel_wire_weight=gszl,aluminum_band_weight=ldzl,
                        steel_band_weight=gdzl, aluminum_band_width=ldkd)
         # obj.user = request.user

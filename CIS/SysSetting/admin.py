@@ -29,7 +29,7 @@ class Category(MPTTModelAdmin):
     fields = ('parent', 'category_name', 'category_value', 'if_sealed')
     list_display = ('category_name', 'category_value', 'if_sealed', 'parent')
     list_filter = ('category_name', 'category_value', 'if_sealed', 'parent')
-    search_fields = ('category_name', 'category_value', 'if_sealed', 'parent')
+    search_fields = ('category_name', 'category_value', 'if_sealed')
     date_hierarchy = 'create_time'  # 详细时间分层筛选
     # ordering = ('create_time',)
 
@@ -37,7 +37,7 @@ class Category(MPTTModelAdmin):
 @admin.register(ObjectCode)
 class ObjectCode(admin.ModelAdmin):
     fields = ('model', 'category', 'object_name', 'object_value',  'type', 'specification', 'unit')
-    list_display = ('object_name', 'object_value', 'type')
-    list_filter = ('object_name', 'object_value',  'category', 'type')
-    search_fields = ('object_name', 'object_value',  'category', 'type')
+    list_display = ('object_name', 'object_value',  'type', 'specification', 'unit')
+    list_filter = ('category','object_name',   'type', 'specification',)
+    search_fields = ( 'object_name',   'type', 'specification',)
     ordering = ('create_time',)

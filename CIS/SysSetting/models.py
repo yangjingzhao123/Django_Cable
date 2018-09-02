@@ -74,7 +74,7 @@ class Category(MPTTModel):
 class ObjectCode(models.Model):
     object_id=models.UUIDField(primary_key=True, default=uuid.uuid1, editable=False)
     object_name = models.CharField(verbose_name=u'名称', max_length=30, null=True)
-    object_value = models.CharField(verbose_name=u'编码',max_length=40, null=True)
+    object_value = models.CharField(max_length=40, null=True)
     model = models.ForeignKey(BasicModel, verbose_name=u'基础模型', related_name='model_material', on_delete=models.CASCADE,)
                               #limit_choices_to={'model_value__istartswith': 'Material'}, )
     category = TreeManyToManyField(Category, verbose_name=u'编码分类',)
@@ -90,8 +90,15 @@ class ObjectCode(models.Model):
     del_flag = models.BooleanField(blank=True, null=True)
     remark = models.CharField(max_length=50, blank=True, null=True)
 
+    @property
+    def full_name(self):
+        if not(self.specification is None):
+            return '%s_%s'%(self.type,self.specification)
+        else:
+            return '%s' % (self.type)
+
     def __str__(self):
-        return self.object_name
+        return self.full_name
 
     class Meta:
         verbose_name = u"3.系统编码"
@@ -117,7 +124,7 @@ class ObjectExtend(models.Model):
     @property
     def full_name(self):
         "Returns the person's full name."
-        return '%s %s' % (self.material_no, self.basic_model_extend_no)
+        return '%s %s' % (self.object_code, self.basic_model_extend_no)
 
     def __str__(self):
         return self.full_name

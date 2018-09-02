@@ -30,6 +30,7 @@ SECRET_KEY = '$%n^81i+mqvb2$w%n2&ynv2x*4w%d!g@se3#7yy+!jlyn=9f$&'
 INSTALLED_APPS = [
     'suit',  # 添加suit支持，必须在 'django.contrib.admin',之前
     'mptt',
+
     'SysSetting.apps.SyssettingConfig', # 或者'SysSetting'
     'BomMan.apps.BommanConfig' ,          #或者'BomMan'
     'ConMan.apps.ConmanConfig' ,          #或者'ConMan'
@@ -119,8 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = 'static' #指向本工程下的static文件夹
+
 
 LANGUAGE_CODE = 'zh-hans'#老版本django 'zh_CN'
 TIME_ZONE = 'Asia/Shanghai'  # TIME_ZONE = 'UTC'
@@ -136,3 +136,13 @@ SUIT_CONFIG = {
     'SHOW_REQUIRED_ASTERISK': True,#Automatically adds asterisk symbol * to the end of every required field label:
     'LIST_PER_PAGE': 20,
 }
+
+STATIC_URL = '/static/'
+STATIC_ROOT = 'static' #指向本工程下的static文件夹
+
+
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'collectstatic')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'CIS/static'),)
+#STATICFILES_DIRS值为tuple类型,单个也要加逗号;testdj为项目名,自己写的时候可按照自己要求更改
