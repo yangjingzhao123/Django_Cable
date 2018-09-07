@@ -384,3 +384,15 @@ sl:warn] [pid 3048:tid 612] AH01909: localhost:443:0 server certificate does NOT
 [Sun Sep 02 13:11:44.373576 2018] [mpm_winnt:notice] [pid 10764:tid 612] AH00422: Parent: Received shutdown signal -- Shutting down the server.
 [Sun Sep 02 13:11:46.393480 2018] [mpm_winnt:notice] [pid 3624:tid 596] AH00364: Child: All worker threads have exited.
 [Sun Sep 02 13:11:46.513442 2018] [mpm_winnt:notice] [pid 10764:tid 612] AH00430: Parent: Child process 3624 exited successfully.
+[Sun Sep 02 14:48:18.198256 2018] [ssl:warn] [pid 736:tid 628] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Sep 02 14:48:18.327181 2018] [ssl:warn] [pid 736:tid 628] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Sep 02 14:48:18.327181 2018] [mpm_winnt:notice] [pid 736:tid 628] AH00455: Apache/2.4.34 (Win64) OpenSSL/1.0.2o mod_wsgi/4.6.4 Python/3.7 configured -- resuming normal operations
+[Sun Sep 02 14:48:18.327181 2018] [mpm_winnt:notice] [pid 736:tid 628] AH00456: Server built: Jul 10 2018 09:37:36
+[Sun Sep 02 14:48:18.327181 2018] [core:notice] [pid 736:tid 628] AH00094: Command line: 'D:\\ProjectCode\\Django_Cable\\Apache24\\bin\\httpd.exe -d D:/ProjectCode/Django_Cable/Apache24'
+[Sun Sep 02 14:48:18.345172 2018] [mpm_winnt:notice] [pid 736:tid 628] AH00418: Parent: Created child process 12220
+[Sun Sep 02 14:48:22.324877 2018] [ssl:warn] [pid 12220:tid 528] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Sep 02 14:48:22.459799 2018] [ssl:warn] [pid 12220:tid 528] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Sep 02 14:48:22.531758 2018] [mpm_winnt:notice] [pid 12220:tid 528] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 02 23:29:52.901170 2018] [mpm_winnt:notice] [pid 736:tid 628] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 02 23:29:54.912872 2018] [mpm_winnt:notice] [pid 12220:tid 528] AH00364: Child: All worker threads have exited.
+[Sun Sep 02 23:29:55.324926 2018] [mpm_winnt:notice] [pid 736:tid 628] AH00430: Parent: Child process 12220 exited successfully.
